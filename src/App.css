@@ -1,7 +1,10 @@
-body, html, #root, .mindmerge-app {
+body,
+html,
+#root,
+.mindmerge-app {
   height: 100%;
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background: #f7f8fa;
 }
 
@@ -41,7 +44,7 @@ body, html, #root, .mindmerge-app {
 .history-item {
   padding: 12px 0;
   border-bottom: 1px solid #f0f0f0;
-  color: #24252D;
+  color: #24252d;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.15s;
@@ -49,7 +52,7 @@ body, html, #root, .mindmerge-app {
 .history-item.active {
   background: #f7f8fa;
   font-weight: 600;
-  border-left: 4px solid #ED6B35;
+  border-left: 4px solid #ed6b35;
   padding-left: 8px;
 }
 .clear-history-btn {
@@ -82,6 +85,8 @@ body, html, #root, .mindmerge-app {
   padding: 0 24px;
   margin: 0;
   flex: 1;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .reference-item {
   padding: 12px 0;
@@ -114,7 +119,7 @@ body, html, #root, .mindmerge-app {
 .code-section {
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   margin: 0 40px 24px 40px;
   padding: 28px 32px 24px 32px;
   position: relative;
@@ -137,8 +142,8 @@ body, html, #root, .mindmerge-app {
   transition: border 0.2s, color 0.2s;
 }
 .tab-btn.active {
-  border-bottom: 2.5px solid #ED6B35;
-  color: #ED6B35;
+  border-bottom: 2.5px solid #ed6b35;
+  color: #ed6b35;
 }
 .copy-btn {
   margin-left: auto;
@@ -163,14 +168,14 @@ body, html, #root, .mindmerge-app {
 .note {
   background: #f7f8fa;
   color: #23272f;
-  border-left: 4px solid #ED6B35;
+  border-left: 4px solid #ed6b35;
   padding: 10px 16px;
   border-radius: 6px;
   font-size: 0.98rem;
   margin-bottom: 16px;
 }
 .view-btn {
-  background: #ED6B35;
+  background: #ed6b35;
   color: #23272f;
   border: none;
   border-radius: 6px;
@@ -197,7 +202,7 @@ body, html, #root, .mindmerge-app {
   margin-right: 12px;
 }
 .send-btn {
-  background: #ED6B35;
+  background: #ed6b35;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -213,7 +218,7 @@ body, html, #root, .mindmerge-app {
   justify-content: flex-end;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   margin: 0 40px 24px 40px;
   padding: 0 0 0 0;
   min-height: 400px;
@@ -223,7 +228,7 @@ body, html, #root, .mindmerge-app {
   flex: 1;
   padding: 32px 32px 16px 32px;
   overflow-y: auto;
-  max-height: 55vh;
+  /* max-height: 55vh; */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -254,7 +259,13 @@ body, html, #root, .mindmerge-app {
 }
 
 /* Remove unused code-section/code-block styles */
-.code-section, .code-block, .tabs, .tab-btn, .copy-btn, .note, .view-btn {
+.code-section,
+.code-block,
+.tabs,
+.tab-btn,
+.copy-btn,
+.note,
+.view-btn {
   display: none !important;
 }
 
@@ -285,7 +296,7 @@ body, html, #root, .mindmerge-app {
   gap: 8px;
 }
 .pro-badge {
-  background: #ED6B35;
+  background: #ed6b35;
   color: #23272f;
   font-size: 0.75em;
   border-radius: 6px;
@@ -298,6 +309,9 @@ body, html, #root, .mindmerge-app {
   background: #151518;
   padding: 0 0 16px 0;
   border-top: 1px solid #353945;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar-history-header {
   font-size: 1.1rem;
@@ -313,6 +327,7 @@ body, html, #root, .mindmerge-app {
   padding: 0 24px;
   margin: 0;
   flex: 1;
+  overflow-y: auto;
 }
 .sidebar-history-item {
   padding: 10px 0;
@@ -325,7 +340,7 @@ body, html, #root, .mindmerge-app {
 .sidebar-history-item.active {
   background: #353945;
   font-weight: 600;
-  border-left: 4px solid #ED6B35;
+  border-left: 4px solid #ed6b35;
   padding-left: 8px;
 }
 .clear-history-btn {
@@ -341,6 +356,25 @@ body, html, #root, .mindmerge-app {
 }
 
 /* Only hide unused history-panel styles */
-.history-panel, .history-header, .history-list, .history-item, .history-item.active {
+.history-panel,
+.history-header,
+.history-list,
+.history-item,
+.history-item.active {
   display: none !important;
+}
+.new-chat-btn {
+  background: #ed6b35;
+  color: #23272f;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.new-chat-btn:hover {
+  background: #d55a2e;
 }
