@@ -60,7 +60,7 @@ function App() {
         </div>
       </aside>
       <main className="main-content">
-        <header className="main-header">AI Chat Helper</header>
+        <header className="main-header">AI Assistant</header>
         <section className="chat-section">
           <div className="chat-area">
             {messages.map((msg, idx) => (

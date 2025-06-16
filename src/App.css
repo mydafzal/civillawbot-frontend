@@ -41,7 +41,7 @@ body, html, #root, .mindmerge-app {
 .history-item {
   padding: 12px 0;
   border-bottom: 1px solid #f0f0f0;
-  color: #23272f;
+  color: #24252D;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.15s;
@@ -260,7 +260,7 @@ body, html, #root, .mindmerge-app {
 
 .sidebar {
   width: 220px;
-  background: #23272f;
+  background: #151518;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -295,7 +295,7 @@ body, html, #root, .mindmerge-app {
 }
 
 .sidebar-history {
-  background: #23272f;
+  background: #151518;
   padding: 0 0 16px 0;
   border-top: 1px solid #353945;
 }
